@@ -1,0 +1,658 @@
+﻿@{
+    ViewBag.Title = "Shop";
+}
+<!--Breadcrumb Start-->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Breadcrumb-->
+<!--Sidebar Content Area Start-->
+<div class="sidebar-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="sidebar-column">
+                    <div class="sidebar-heading">Layered Navigation</div>
+                    <div class="sidebar-widgets-container">
+                        <div class="sidebar-single-widget">
+                            <label class="sidebar-widget-title">Price</label>
+                            <div class="price_filter">
+                                <div id="slider-range"></div>
+                                <div class="price_slider_amount">
+                                    <div class="slider-values">
+                                        <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-single-widget">
+                            <label class="sidebar-widget-title">Color</label>
+                            <ul class="widget-list">
+                                <li><a href="#">Black(10)</a></li>
+                                <li><a href="#">Blue(6)</a></li>
+                                <li><a href="#">Green(9)</a></li>
+                                <li><a href="#">Red(11)</a></li>
+                                <li><a href="#">White(0)</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-single-widget">
+                            <label class="sidebar-widget-title">Category</label>
+                            <ul class="widget-list">
+                                <li><a href="#">Accessories(12)</a></li>
+                                <li><a href="#">Dresses(1)</a></li>
+                                <li><a href="#">Tops(9)</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-single-widget">
+                            <label class="sidebar-widget-title">Manufacturer</label>
+                            <ul class="widget-list">
+                                <li><a href="#">Calvin Klein (12)</a></li>
+                                <li><a href="#">Diesel (12)</a></li>
+                                <li><a href="#">Polo (12)</a></li>
+                                <li><a href="#">Tommy Hilfiger (11)</a></li>
+                                <li><a href="#">Versace (0)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner flash-hover">
+                        <a href="#">
+                            <img src="~/img/banner/17.jpg" alt="">
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-md-9">
+                <h2 class="categories-title">tuxedo</h2>
+                <p class="category-compare"><a id="compare" href="#">Product Compare (0)</a></p>
+                <div class="shop-item-filter">
+                    <div class="shop-tab row">
+                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+                            <div class="shop-tab-selectors">
+                                <form action="#" class="sort-form">
+                                    <label>Sort by:</label>
+                                    <div style="width: 190px;" class="selector">
+                                        <select id="selectProductSort" class="selectProductSort form-control">
+                                            <option value="position:asc" selected="selected">Default</option>
+                                            <option value="price:asc">Price: Lowest first</option>
+                                            <option value="price:desc">Price: Highest first</option>
+                                            <option value="name:asc">Product Name: A to Z</option>
+                                            <option value="name:desc">Product Name: Z to A</option>
+                                            <option value="quantity:desc">In stock</option>
+                                            <option value="reference:asc">Reference: Lowest first</option>
+                                            <option value="reference:desc">Reference: Highest first</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <form action="#" method="get" class="item-page">
+                                    <label>Show:</label>
+                                    <div class="selector">
+                                        <select name="n" id="nb_item" class="form-control">
+                                            <option value="9" selected="selected">9</option>
+                                            <option value="18">18</option>
+                                            <option value="27">27</option>
+                                            <option value="36">36</option>
+                                            <option value="45">45</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
+                            <!-- Nav tabs -->
+                            <ul role="tablist" class="nav nav-tabs">
+                                <li role="presentation">
+                                    <a data-toggle="tab" role="tab" aria-controls="list" href="#list" aria-expanded="true"><i class="fa fa-th-list" data-toggle="tooltip" title="List"></i></a>
+                                </li>
+                                <li class="active" role="presentation">
+                                    <a data-toggle="tab" role="tab" aria-controls="grid" href="#grid" aria-expanded="false"><i class="fa fa-th" data-toggle="tooltip" title="Grid"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="tab-content">
+                    <div id="grid" class="tab-pane active" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/22.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag </a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 23.87</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/21.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Printed Dress </a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 45.89</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/22.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag </a></div>
+                                        <div class="p-price">
+                                            <span class="price-old">RM 231.42</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/4.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag </a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 21.36</span> <span class="price-old">RM 870.54</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/5.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag</a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 89.23</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/5.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag</a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 67.90</span> <span class="price-old">RM 851.23</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/13.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag</a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 32.78</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/15.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag</a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 34.99</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 hidden-sm">
+                                <div class="single-product">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="~/img/product/fashion/16.jpg" alt="">
+                                        </a>
+                                        <div class="rating"><img alt="" src="~/img/icon/star.png"></div>
+                                    </div>
+                                    <div class="product-text">
+                                        <div class="p-name"><a href="#">Hand Bag</a></div>
+                                        <div class="p-price">
+                                            <span class="price-new">RM 67.23</span> <span class="price-old">RM 324.99</span>
+                                        </div>
+                                        <div class="cart-links">
+                                            <div class="add-to-cart">
+                                                <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                            </div>
+                                            <ul class="add-to-link">
+                                                <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="list" class="tab-pane shop-list" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/17.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand Bag </a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 23.87</span>
+                                                </div>
+                                                <p class="description">Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1.</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/18.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand Bag</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-old">RM 239.67</span> <span class="price-new">RM 45.89</span>
+                                                </div>
+                                                <p class="description">Revolutionary multi-touch interface. iPod touch features the same multi-touch screen technology..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/19.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand Bag </a></div>
+                                                <div class="p-price">
+                                                    <span class="price-old">RM 231.42</span> <span class="price-new">RM 77.21</span>
+                                                </div>
+                                                <p class="description">The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/20.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand Bag </a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 21.36</span> <span class="price-old">RM 870.54</span>
+                                                </div>
+                                                <p class="description">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery l..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/13.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand bag</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 89.23</span>
+                                                </div>
+                                                <p class="description">iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/14.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Hand Bag</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 67.90</span>
+                                                </div>
+                                                <p class="description">MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inche..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/15.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Exclusive</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 32.78</span> <span class="price-old">RM 236.65</span>
+                                                </div>
+                                                <p class="description">Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel ..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/16.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Collection</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 34.99</span>
+                                                </div>
+                                                <p class="description">Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-product">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="~/img/product/fashion/17.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="product-text">
+                                                <div class="p-name"><a href="#">Fashionable Hand Bag</a></div>
+                                                <div class="p-price">
+                                                    <span class="price-new">RM 67.23</span> <span class="price-old">RM 324.99</span>
+                                                </div>
+                                                <p class="description">Born to be worn.Clip on the worlds most wearable music player and take up to 240 songs wit..</p>
+                                                <div class="cart-links">
+                                                    <div class="add-to-cart">
+                                                        <button type="button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                                    </div>
+                                                    <ul class="add-to-link">
+                                                        <li><button type="button"><i class="fa fa-heart"></i></button></li>
+                                                        <li><button type="button"><i class="fa fa-exchange"></i></button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pagination-content">
+                            <div class="pagination-button">
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">></a></li>
+                                    <li>
+                                        <a href="#">>|</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>Showing 1 to 9 of 12 (2 Pages)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Sidebar Content Area-->

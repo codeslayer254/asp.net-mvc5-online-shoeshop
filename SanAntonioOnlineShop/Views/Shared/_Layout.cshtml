@@ -1,0 +1,492 @@
+﻿@using Microsoft.AspNet.Identity
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewBag.Title - San Antonio Online Shop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Google Fonts
+    ============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+
+    <!-- Fontawsome CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+
+    <!-- owl.carousel CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/owl.theme.css">
+    <link rel="stylesheet" href="~/Content/owl.transitions.css">
+
+    <!-- jquery-ui CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/jquery-ui.css">
+
+    <!-- meanmenu CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/meanmenu.min.css">
+
+    <!-- animate CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/animate.css">
+
+    <!-- nivo slider CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/lib/nivo-slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="~/lib/nivo-slider/css/preview.css" type="text/css" media="screen" />
+
+    <!-- normalize CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/normalize.css">
+
+    <!-- main CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/main.css">
+
+    <!-- style CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/style.css">
+
+    <!-- responsive CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/Content/responsive.css">
+
+    <!-- modernizr JS
+    ============================================ -->
+    <script src="~/Scripts/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--Header Area Start-->
+    <header class="home-two-header-area">
+        <!--Header Top Start-->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <div class="header-top-info">
+                            <div class="header-phone">
+                                <p><i class="fa fa-phone">&nbsp;</i>Call support free: <span>(800)123 456 789</span></p>
+                            </div>
+                            <div class="header-email">
+                                <p><i class="fa fa-envelope">&nbsp;</i>Email: <span>admin@sanantonio.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <ul class="header-r-cart home-two-header">
+                            <li>
+                                <a class="cart" href="cart.html">2 item(s) - RM 156.15</a>
+                                <div class="mini-cart-content">
+                                    <div class="cart-products-list">
+                                        <div class="cart-products">
+                                            <div class="cart-image">
+                                                <a href="#"><img src="~/img/cart/s-10.jpg" alt=""></a>
+                                            </div>
+                                            <div class="cart-product-info">
+                                                <a href="#" class="product-name">Hand Bag</a>
+                                                <span class="quantity">X 1 -</span>
+                                                <span class="p-price">RM 23.87</span>
+                                                <a class="remove-product"><i class="fa fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="cart-products">
+                                            <div class="cart-image">
+                                                <a href="#"><img src="~/img/cart/s-11.jpg" alt=""></a>
+                                            </div>
+                                            <div class="cart-product-info">
+                                                <a href="#" class="product-name">Hand Bag</a>
+                                                <span class="quantity">X 1 -</span>
+                                                <span class="p-price">RM 332.28</span>
+                                                <a class="remove-product"><i class="fa fa-times-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-price-list">
+                                        <p class="price-amount">Sub-Total : <span>RM 293.73</span> </p>
+                                        <p class="price-amount">Eco Tax (-2.00) : <span>RM 3.67</span> </p>
+                                        <p class="price-amount">VAT (20%) : <span>RM 58.75</span> </p>
+                                        <p class="price-amount">Total : <span>RM 356.15</span> </p>
+                                        <div class="cart-buttons">
+                                            <a href="@Url.Action("Index", "ShoppingCart")"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                                            <a href="@Url.Action("Checkout", "Home")"><i class="fa fa-shopping-cart"></i> Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Header Top-->
+        <div class="header-home-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div id="logo">
+                            <a>@Html.ActionLink("SAN ANTONIO ONLINE SHOP", "Index", "Products")</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+                        <div id="search-category" class="input-group">
+                            <form class="search-box" action="#" method="post">
+                                <div class="search-categories">
+                                    <div class="search-cat">
+                                        <select class="category-items " name="category">
+                                            <option>All Categories</option>
+                                            <option>Hand Bags</option>
+                                            <option>Bootees Bags</option>
+                                            <option>Day</option>
+                                            <option>Evening</option>
+                                            <option>Suit</option>
+                                            <option>Tuxedo</option>
+                                            <option>Boots</option>
+                                            <option>Casuals</option>
+                                            <option>Formal</option>
+                                            <option>Cocktail</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="search" class="form-control" placeholder="Search here..." id="text-search" name="search">
+                                <button id="btn-search-category" type="submit">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                        <div class="header-top-menu">
+                            <ul class="header-links">
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" title="My Account" href="~/Views/Home/account.html"><span>My Account</span><i class="fa fa-angle-down"></i></a>
+                                    @if (Request.IsAuthenticated)
+                                    {
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                                            </li>
+                                            <li>@Html.ActionLink("Wish List (2)", "Wishlist", "Home")</li>
+                                            <li>@Html.ActionLink("Shopping Cart", "Cart", "Home")</li>
+                                            <li>@Html.ActionLink("Checkout", "Checkout", "Home")</li>
+                                        </ul>
+
+                                        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                                            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                                        </ul>
+                                    }
+                                </li>
+                            </ul>
+                            <div class="currency-language-menu">
+                                <div class="floatleft">
+                                    <form action="#" method="post" id="currency">
+                                        <div class="btn-group">
+                                            <button data-toggle="dropdown" class="btn btn-link dropdown-toggle" aria-expanded="false">
+                                                <span>Currency</span> <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><button name="EUR" type="button">MYR Ringit</button></li>
+                                                <li><button name="GBP" type="button">£ Pound Sterling</button></li>
+                                                <li><button name="USD" type="button">$ US Dollar</button></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Mainmenu Area Start-->
+        <div class="mainmenu-area-home-two">
+            <div id="sticker">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul id="nav">
+                                        <li class="current">
+                                            <a href="@Url.Action("Index", "Products")"><i class="fa fa-home"></i></a>
+                                        </li>
+                                        <li>
+                                           <li> <a href="shop-grid.html">WOMEN</a>
+                                            <div class="megamenu">
+                                                <div class="megamenu-list clearfix">
+                                                    <span>
+                                                        <a href="#" class="mega-title">Shoes</a>
+                                                        @Html.ActionLink("High Heels", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Casuals", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Sports", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Boots", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+
+                                                    </span>
+                                                    <span>
+                                                        <a href="#" class="mega-title">Handbags</a>
+                                                         @Html.ActionLink("Official", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Casual", "Shopgrid", "Home", null, new { @class = "MenuButtons" }) 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="shop-grid.html">Men</a>
+                                            <div class="megamenu">
+                                                <div class="megamenu-list clearfix">
+                                                    <span>
+                                                        <a href="#" class="mega-title">Shoes</a>
+                                                        @Html.ActionLink("Boots", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Sports", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Formal", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Sandals", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                    </span>
+                                                    <span>
+                                                        <a href="#" class="mega-title">Clothing</a>
+                                                        @Html.ActionLink("Coats", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Jackets", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("Jeans", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                        @Html.ActionLink("T-shirts", "Shopgrid", "Home", null, new { @class = "MenuButtons" })
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Mainmenu Area-->
+        <!-- Mobile Menu Area start -->
+        <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">HOME</a>
+                                        <ul>
+                                            <li><a href="index-2.html">Home 2</a></li>
+                                            <li><a href="index-3.html">Home 3</a></li>
+                                            <li><a href="index-4.html">Home 4</a></li>
+                                            <li><a href="index-5.html">Home 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SHOP</a>
+                                        <ul>
+                                            <li><a href="shop-grid.html">Shop Grid</a></li>
+                                            <li><a href="shop-list.html">Shop List</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">ABOUT</a>
+                                    <li>
+                                        <a href="#">PAGES</a>
+                                        <ul>
+                                            <li><a href="account.html">My Account</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="checkout.html">Checkout</a></li>
+                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Area end -->
+    </header>
+    <!--End of Header Area-->
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+        </div>
+
+        <!--Footer Start-->
+        <footer class="footer-area home-two-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-container">
+                            <span>Copyright <a href="#">San-Antonio Shoes</a> All Rights Reserved</span>
+                            <a href="#"><img src="img/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End of Footer-->
+        <!-- jquery
+        ============================================ -->
+        <script src="~/Scripts/vendor/jquery-1.11.3.min.js"></script>
+
+        <!-- bootstrap JS
+        ============================================ -->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+
+        <!-- nivo slider js
+        ============================================ -->
+        <script src="~/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+        <script src="~/lib/nivo-slider/home.js" type="text/javascript"></script>
+
+        <!-- wow JS
+        ============================================ -->
+        <script src="~/Scripts/wow.min.js"></script>
+
+        <!-- price-slider JS
+        ============================================ -->
+        <script src="~/Scripts/jquery-price-slider.js"></script>
+
+        <!-- meanmenu JS
+        ============================================ -->
+        <script src="~/Scripts/jquery.meanmenu.js"></script>
+
+        <!-- owl.carousel JS
+        ============================================ -->
+        <script src="~/Scripts/owl.carousel.min.js"></script>
+
+        <!-- scrollUp JS
+        ============================================ -->
+        <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+
+        <!-- Sticky Menu JS
+        ============================================ -->
+        <script src="~/Scripts/jquery.sticky.js"></script>
+
+        <!-- Elevatezoom JS
+        ============================================ -->
+        <script src="~/Scripts/jquery.elevateZoom-3.0.8.min.js"></script>
+
+        <!-- plugins JS
+        ============================================ -->
+        <script src="~/Scripts/plugins.js"></script>
+
+    <!-- Shopping Cart js
+    ============================================ -->
+    <script type="text/javascript">
+    $(function () {
+        // Document.ready -> link up remove event handler
+        $(".RemoveLink").click(function () {
+            // Get the id from the link
+            var recordToDelete = $(this).attr("data-id");
+
+            if (recordToDelete != '') {
+
+                // Perform the ajax post
+                $.post("/ShoppingCart/RemoveFromCart", { "id": recordToDelete },
+                    function (data) {
+                        // Successful requests get here
+                        // Update the page elements
+                        if (data.ItemCount == 0) {
+                            $('#row-' + data.DeleteId).fadeOut('slow');
+                        } else {
+                            $('#item-count-' + data.DeleteId).text(data.ItemCount);
+                        }
+
+                        $('#cart-total').text(data.CartTotal);
+                        $('#update-message').text(data.Message);
+                        $('#cart-status').text('Cart (' + data.CartCount + ')');
+                    });
+            }
+        });
+
+    });
+
+
+    function handleUpdate() {
+        // Load and deserialize the returned JSON data
+        var json = context.get_data();
+        var data = Sys.Serialization.JavaScriptSerializer.deserialize(json);
+
+        // Update the page elements
+        if (data.ItemCount == 0) {
+            $('#row-' + data.DeleteId).fadeOut('slow');
+        } else {
+            $('#item-count-' + data.DeleteId).text(data.ItemCount);
+        }
+
+        $('#cart-total').text(data.CartTotal);
+        $('#update-message').text(data.Message);
+        $('#cart-status').text('Cart (' + data.CartCount + ')');
+    }
+    </script>
+
+    <!-- Google Map js
+    ============================================ -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				center: new google.maps.LatLng(40.663293, -73.956351)
+			  };
+
+			  var map = new google.maps.Map(document.getElementById('googleMap'),
+				  mapOptions);
+
+
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: '~/img/map-marker.png',
+				map: map
+			  });
+
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+        <!-- main JS
+        ============================================ -->
+        <script src="~/Scripts/main.js"></script>
+        @RenderSection("scripts", required: false)
+</body>
+</html>

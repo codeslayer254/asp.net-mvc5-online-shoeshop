@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Whishlist";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<!--Breadcrumb Start-->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Breadcrumb-->
+<!-- Wishlist main area start -->
+<div class="wishlist-main-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Wishlist</h1>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <form action="#" method="post">
+                    <div class="table-content table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td class="product-thumbnail">Image</td>
+                                    <td class="product-name">Product Name</td>
+                                    <td class="product-model">Model</td>
+                                    <td class="product-stock">Stock</td>
+                                    <td class="product-price">Unit Price</td>
+                                    <td class="product-subtotal">Action</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-thumbnail"><a href="product-details.html"><img src="~/img/cart/s-10.jpg" alt="" /></a></td>
+                                    <td class="product-name"><a href="product-details.html">Alteration</a></td>
+                                    <td class="product-model">Product 7</td>
+                                    <td class="product-stock">In Stock</td>
+                                    <td class="product-price"><span class="amount">RM 50.28</span></td>
+                                    <td class="product-action">
+                                        <button class="btn btn-primary" title="" data-toggle="tooltip" type="button" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                                        <a class="btn btn-danger" title="" data-toggle="tooltip" href="#" data-original-title="Remove"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-thumbnail"><a href="product-details.html"><img src="~/img/cart/s-11.jpg" alt="" /></a></td>
+                                    <td class="product-name"><a href="product-details.html">Collection</a></td>
+                                    <td class="product-model">Product 14</td>
+                                    <td class="product-stock">In Stock</td>
+                                    <td class="product-price"><span class="amount">RM 30.00</span></td>
+                                    <td class="product-action">
+                                        <button class="btn btn-primary" title="" data-toggle="tooltip" type="button" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                                        <a class="btn btn-danger" title="" data-toggle="tooltip" href="#" data-original-title="Remove"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buttons">
+                    <div class="pull-right"><a class="btn btn-primary" href="#">Continue</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Wishlist main area end -->
