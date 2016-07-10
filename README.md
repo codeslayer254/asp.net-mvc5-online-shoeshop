@@ -1,14 +1,14 @@
 # asp.net-mvc5-online-shoeshop
 An online shoes &amp; handbag shopping  web application built with ASP.NET Core MVC, which implements the model–view–controller pattern.
 
-### i. Member Registration
-New customers are able to register as members to perform tasks which are permitted
-to members only.
-
-### ii. Administrative Functions (Website Management)
-The website administrators are allowed to perform administrative tasks like product
-management, order, payment and delivery processing, generate various types of
-reports and etc.
+>### i. Member Registration
+>New customers are able to register as members to perform tasks which are permitted
+>to members only.
+>
+>### ii. Administrative Functions (Website Management)
+>The website administrators are allowed to perform administrative tasks like product
+>management, order, payment and delivery processing, generate various types of
+>reports and etc.
 
 ### iii. Product Catalog
 Customers are able to browse the products offered by the company. The product
@@ -35,7 +35,6 @@ comments through the website. The website administrator will take action and
 response respectively by checking the reports generated from administration pages.
 
 
-
 ### Software Requirements
 **ASP.NET:** Microsoft Visual Studio >2012
 
@@ -45,7 +44,7 @@ response respectively by checking the reports generated from administration page
 the project uses GIT versioning system, inother to get a clone of the project use the git command
 
 ```sh
-git clone https://gitlab.com/busyunitx/my-embassy.git
+git clone https://github.com/ramayall/asp.net-mvc5-online-shoeshop.git
 ```
 
 
