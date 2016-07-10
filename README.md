@@ -50,6 +50,7 @@ git clone https://github.com/ramayall/asp.net-mvc5-online-shoeshop.git
 
 ### Installation & Set Up Guide
 **Installtion Steps:**
+
 1. Download/clone the project to your local repository directory.
 
 2. Launch Visual Studio IDE and import the project as an existing Visual Studio project.
