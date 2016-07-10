@@ -1,9 +1,6 @@
 # asp.net-mvc5-online-shoeshop
 An online shoes &amp; handbag shopping  web application built with ASP.NET Core MVC, which implements the model–view–controller pattern.
 
-An online shoes & handbag shopping  web application built with
-ASP.NET Core MVC, which implements the model–view–controller pattern.
-
 ### i. Member Registration
 New customers are able to register as members to perform tasks which are permitted
 to members only.
@@ -43,9 +40,6 @@ response respectively by checking the reports generated from administration page
 **ASP.NET:** Microsoft Visual Studio >2012
 
 **Server:** Microsoft SQL Server 2014
-
-**Server:** Microsoft SQL Server 2014
-
 
 ### Getting the project clone
 the project uses GIT versioning system, inother to get a clone of the project use the git command
