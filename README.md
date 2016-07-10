@@ -40,7 +40,8 @@ An online shoes &amp; handbag shopping  web application built with ASP.NET Core 
 **Server:** Microsoft SQL Server 2014
 
 ### Getting the project clone
-the project uses GIT versioning system, inother to get a clone of the project use the git command
+The project uses GIT versioning system,  use the follwing git command to get a clone of the project
+to your local repository
 
 ```sh
 git clone https://github.com/ramayall/asp.net-mvc5-online-shoeshop.git
