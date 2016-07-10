@@ -4,35 +4,34 @@ An online shoes &amp; handbag shopping  web application built with ASP.NET Core 
 >### i. Member Registration
 >New customers are able to register as members to perform tasks which are permitted
 >to members only.
->
 >### ii. Administrative Functions (Website Management)
 >The website administrators are allowed to perform administrative tasks like product
 >management, order, payment and delivery processing, generate various types of
 >reports and etc.
+>
+>### iii. Product Catalog
+>Customers are able to browse the products offered by the company. The product
+>listing is generated from database dynamically. The detail of the products should be
+>displayed upon clicking. A minimum of FIVE (5) different products is required.
+>
+>### iv. Shopping Cart
+>Customers can view a product catalog and create a shopping cart for storing
+>merchandise. Customers can check-out anytime during shopping and proceed to
+>payment processing.
+>
+>### v. Payment Support
+>There are many Payment options available. Customers commonly use credit cards to
+>make payments. Customers are allowed to download the transaction details as a
+>document and print the transaction document.
+>
+>### vi. Product Delivery
+>Once a payment has been accepted the product(s) ordered will be delivered to
+>designated address.
 
-### iii. Product Catalog
-Customers are able to browse the products offered by the company. The product
-listing is generated from database dynamically. The detail of the products should be
-displayed upon clicking. A minimum of FIVE (5) different products is required.
-
-### iv. Shopping Cart
-Customers can view a product catalog and create a shopping cart for storing
-merchandise. Customers can check-out anytime during shopping and proceed to
-payment processing.
-
-### v. Payment Support
-There are many Payment options available. Customers commonly use credit cards to
-make payments. Customers are allowed to download the transaction details as a
-document and print the transaction document.
-
-### vi. Product Delivery
-Once a payment has been accepted the product(s) ordered will be delivered to
-designated address.
-
-### vii. Customer Feedback
-Customers who are seeking for supports can leave their enquiries, feedbacks &
-comments through the website. The website administrator will take action and
-response respectively by checking the reports generated from administration pages.
+>### vii. Customer Feedback
+>Customers who are seeking for supports can leave their enquiries, feedbacks &
+>comments through the website. The website administrator will take action and
+>response respectively by checking the reports generated from administration pages.
 
 
 ### Software Requirements
